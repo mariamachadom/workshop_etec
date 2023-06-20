@@ -29,7 +29,7 @@ df['obeso'] = df['imc'].apply(lambda x: 'sim' if x > 30 else 'não')
 df['possui_filhos'] = df['qtd_filhos'].apply(lambda x: "não" if x == 0 else 'Sim')
 df['qtd_filhos'] = df['qtd_filhos'].astype('str')
 
-# st.write(df)
+st.dataframe(data=df)
 
 # "with" notation
 with st.sidebar:
